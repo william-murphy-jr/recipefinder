@@ -3,7 +3,73 @@ body {
   padding: 5%;
 }
 
+
 .App {
   width: 40%;
   margin: 5% auto;
+}
+
+a.recipe-item-anchor {
+  text-decoration: none;
+}
+.recipe-item {
+  /* display: flex;
+  align-items: center;
+  justify-content: center ; */
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.recipe-title {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.recipe-title > p {
+  margin-bottom: 9px;
+}
+
+
+.Item-container {
+  width: 225px;
+  margin: 25px auto;
+}
+
+.list-item-group {
+  text-align: left;
+}
+
+.Image-thumbnail {
+  width: 125px;
+  height: 125px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.Image-thumbnail:hover {
+  border: 1px solid rgba(164, 164, 164, 0.5);
+  opacity: 0.75;
+}
+
+.list-items {
+  text-align: left;
+}
+
+.recipe-star, .recipe-filled-star {
+  font-size: 32px;
+}
+
+.recipe-star:hover {
+  font-size: 32px;
+  opacity: 0.5;
+  /* background-color: yellow; */
+  cursor: pointer;
+}
+
+.results-input-number {
+  width: 25%;
+  margin: 8px auto;
 }
