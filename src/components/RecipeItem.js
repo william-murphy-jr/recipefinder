@@ -29,14 +29,17 @@ class RecipeItem extends Component {
         <div className="Item-container">
           <div>
             {
-              this.state.favorite ?
-                <div className="recipe-filled-star">
-                  <span>&#9733;</span>
-                </div>
+              this.props.favoriteButton ? 
+                this.state.favorite ?
+                  <div className="recipe-filled-star">
+                    <span>&#9733;</span>
+                  </div>
+                :
+                  <div className="recipe-star" onClick={() => this.favorite(recipeItem)}>
+                    <span>&#9734;</span>
+                  </div>
               :
-                <div className="recipe-star" onClick={() => this.favorite(recipeItem)}>
-                  <span>&#9734;</span>
-                </div>
+              <div>&nbsp;</div>
             }
           </div>
           <ul className="list-item-group">
