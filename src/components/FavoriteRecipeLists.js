@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import RecipeItem from './RecipeItem';
+import Navigation from './Navigation';
 
 class FavoriteRecipeLists extends Component {
   render() {
@@ -9,6 +10,11 @@ class FavoriteRecipeLists extends Component {
 
     return (
       <div>
+        <Navigation
+          componentClassNames={ "navigation-component" }
+          to={ "/" }
+          name={"Recipe"}
+        />
         <h3 className="favorite-recipe-title">My Favorite Recipes</h3>
         {
           favoriteRecipe.map((recipe, index) => {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, FormGroup, FormControl, FormLabel, Button } from 'react-bootstrap';
 import CONFIG from '../config/config';
 import { connect } from 'react-redux';
-import setRecipes, { SET_RECIPES } from '../actions';
+import setRecipes from '../actions';
 
 class SearchRecipes extends Component {
   constructor() {
@@ -13,9 +13,7 @@ class SearchRecipes extends Component {
       healthLabels: '',
       calories: [],
       number: 0,
-
     }
-    
   }
   
   search() {

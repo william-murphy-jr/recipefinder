@@ -73,3 +73,15 @@ a.recipe-item-anchor {
   width: 25%;
   margin: 8px auto;
 }
+
+.navigation-component a {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  text-decoration: none !important;
+}
+
+.navigation-component:hover a {
+  opacity: 0.6;
+  cursor: pointer;
+}
